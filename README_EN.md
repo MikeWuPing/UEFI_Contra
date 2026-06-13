@@ -11,6 +11,9 @@
 This project ports the classic NES game **Contra** (魂斗罗) to the **UEFI Shell** environment. The game runs as a UEFI application (.efi file), rendering graphics directly through GOP (Graphics Output Protocol) without requiring an operating system — only UEFI firmware.
 
 The implementation references the 6502 assembly source from the [NES Contra US Disassembly](https://github.com/vermiceli/nes-contra-us) project, reconstructing the core game logic in C. Sprite assets are derived from graphics extracted from the original NES ROM.
+<img width="771" height="663" alt="short1" src="https://github.com/user-attachments/assets/31a859b3-ea3a-4bc4-9812-d8b355e0077c" />
+<img width="482" height="432" alt="Snipaste_2026-06-13_08-12-50" src="https://github.com/user-attachments/assets/99912672-87cb-4e38-9126-ed755783f347" />
+<img width="771" height="663" alt="Snipaste_2026-06-13_19-18-18" src="https://github.com/user-attachments/assets/908d8acd-456d-4809-9454-8cf2014b1d53" />
 
 ### Features
 
