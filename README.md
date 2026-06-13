@@ -107,11 +107,6 @@ Level Routines (11 子状态, 在 Game Routine 05 内)
 
 ### 编译步骤
 
-```bash
-# 1. 克隆仓库（含 EDK2 子模块）
-git clone --recurse-submodules https://github.com/<your-username>/contra-uefi.git
-cd contra-uefi
-
 # 2. 转换精灵图片（PNG → .spr）
 cd tools
 python png_to_spr.py
