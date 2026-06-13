@@ -12,6 +12,11 @@
 
 项目参考了 [NES Contra US Disassembly](https://github.com/vermiceli/nes-contra-us) 的 6502 汇编源码，在 C 语言层面重建了核心游戏逻辑，精灵图片来源于 NES ROM 中提取的素材。
 
+<img width="771" height="663" alt="short1" src="https://github.com/user-attachments/assets/31a859b3-ea3a-4bc4-9812-d8b355e0077c" />
+<img width="482" height="432" alt="Snipaste_2026-06-13_08-12-50" src="https://github.com/user-attachments/assets/99912672-87cb-4e38-9126-ed755783f347" />
+<img width="771" height="663" alt="Snipaste_2026-06-13_19-18-18" src="https://github.com/user-attachments/assets/908d8acd-456d-4809-9454-8cf2014b1d53" />
+
+
 ### 特性
 
 - 🖥️ **裸金属运行** — 在 QEMU + OVMF 固件上直接启动，无操作系统
