@@ -34,65 +34,9 @@
 
 > 在 QEMU 中启动 UEFI Shell，输入 `Contra` 即可开始游戏。
 
-```
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│   ██████  ██████  ███  ██████  ██████  ██████   │
-│  ██      ██   ██  ███ ██   ██ ██   ██ ██       │
-│  ██      ██   ██  ███ ██   ██ ██████  ██       │
-│  ██      ██   ██  ███ ██   ██ ██  ██  ██       │
-│   ██████  ██████  ███ ██████  ██   ██  ██████   │
-│                                                  │
-│         魂斗罗 UEFI — 裸金属游戏移植              │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
+<img width="482" height="432" alt="Snipaste_2026-06-13_08-12-50" src="https://github.com/user-attachments/assets/99912672-87cb-4e38-9126-ed755783f347" />
 
 ---
-
-## 项目结构
-
-```
-contra/
-├── README.md                          # 本文件（中文）
-├── README_EN.md                       # 英文版
-├── CLAUDE.md                          # AI 辅助开发指南
-├── refer/                             # NES 反汇编参考资料
-│   ├── src/                           # 6502 汇编源码（bank0~bank7）
-│   ├── docs/                          # 图形、关卡、敌人等技术文档
-│   │   ├── Graphics Documentation.md
-│   │   ├── Level Headers.md
-│   │   ├── Contra Control Flow.md
-│   │   ├── Enemy Glossary.md
-│   │   └── sprite_library/            # 精灵图片（PNG 格式）
-│   └── baserom.nes                    # NES ROM 文件（用于提取数据）
-├── tools/                             # Python 数据提取工具
-│   ├── extract_level_data.py          # 提取关卡 Super-Tile 和屏幕数据
-│   ├── extract_full_tiles_fixed.py    # 从 ROM 解压 tile 图形数据
-│   ├── png_to_spr.py                  # PNG 转 .spr 精灵文件格式
-│   └── ...
-├── qemu_test/                         # QEMU 测试环境
-│   ├── Contra.efi                     # 编译产物
-│   ├── OVMF_CODE.fd                   # OVMF 固件
-│   ├── sprites/                       # .spr 精灵文件
-│   └── run_contra.bat                 # 一键启动脚本
-└── ../edk2/EmulatorPkg/Application/ContraGame/
-    ├── ContraGame.inf                 # EDK2 模块定义
-    ├── main.c                         # 游戏主循环 & 渲染入口
-    ├── game_state.c                   # game_routine + level_routine 状态机
-    ├── level.c                        # 背景渲染、碰撞检测、调色板循环
-    ├── player.c                       # 玩家物理、动画、输入处理
-    ├── enemy.c                        # 敌人 AI 与生成系统
-    ├── bullet.c                       # 子弹与武器系统
-    ├── weapon.c                       # 武器道具掉落与拾取
-    ├── sprites.c                      # 精灵加载与绘制
-    ├── render.c                       # GOP 初始化、双缓冲、缩放
-    ├── input.c                        # 键盘输入轮询
-    ├── nes_palette.c                  # NES 64 色调色板 BGR 映射
-    ├── level_data.h                   # 关卡 1 完整数据（103 super-tile + 13 屏幕）
-    ├── tiles_full.h                   # 256 个 NES 2bpp tile 数据
-    └── intro_screen.h                 # 开场画面 Nametable 数据
-```
 
 ---
 
