@@ -136,7 +136,7 @@ qemu-system-x86_64 \
   -drive if=pflash,format=raw,file=OVMF_CODE.fd,readonly=on \
   -drive file=fat:rw:.,format=raw \
   -net none -m 256 -vga std
-```
+
 
 在 UEFI Shell 中输入 `Contra` 即可运行。
 
